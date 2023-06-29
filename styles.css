@@ -7,12 +7,29 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
-p {
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+p.main {
   font-family: "Courier New", Courier, monospace;
   color: darkgoldenrod;
   font-size: 15px;
   text-align: center;
 }
+
+p.pdef {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  border-style: solid;
+  border-color: tomato;
+  border-width: 2px;
+}
+
 div.container {
   text-align: center;
 }
