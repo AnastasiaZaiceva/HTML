@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto', Arial;
+    background-image: url("bread.jpg");
+    margin: 0;
+}
+
+#header-bar {
+    background-color: rgb(232, 221, 221);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#navigation-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation-section .button {
+    margin: 30px;
+}
+
+.button-itself {
+    background-color: rgb(232, 221, 221);
+    font-family: 'Roboto', Arial;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-shadow 0.2s;
+}
+
+.button-itself:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1) perspective(1px)
+}
+
+.button-itself:active {
+    opacity: 0.5;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 170px;
+    max-width: 400px;
+}
+
+#search-bar {
+    font-family: 'Roboto', Arial;
+    font-size: 16px;
+    border: 1px solid white;
+    padding: 7px 10px;
+    width: 150px;
+    border-radius: 2px;
+    margin-right: -1px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+#search-button {
+    background-color: rgb(232, 221, 221);
+    height: 35px;
+    width: 45px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#search-icon {
+    height: 21px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.main-section-text h1 {
+    color: rgb(56, 56, 56);
+    font-family: 'Paytone One', sans-serif;
+    font-size: 80px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.main-section-text p {
+    color: rgb(101, 100, 100);
+    font-family: 'Kanit', sans-serif;
+    font-size: 21px;
+    word-spacing: 1px;
+}
+
+section {
+    padding: 95px 18%;
+}
