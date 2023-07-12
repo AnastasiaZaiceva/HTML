@@ -1,0 +1,341 @@
+body {
+  background-color: floralwhite;
+  font-family: Arial;
+  height: 3000px;
+  padding-top: 70px;
+  padding-left: 95px;
+  /*для того, чтобы поместить сайдбар*/
+}
+
+#header-bar {
+  background-color: rgb(240, 210, 151);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /*равномерно по строке распределить объекты*/
+  position: fixed;
+  /*для того, чтобы хэдер оставался видимым наверху при скроле вниз*/
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+#left-section {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#left-heart {
+  width: 50px;
+}
+
+#middle-section {
+  width: 450px;
+  margin-left: 250px;
+  margin-right: 80px;
+  text-align: center;
+}
+
+#right-section {
+  margin-right: 15px;
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  /*расположение по цетру от высоты, for flexbox only*/
+}
+
+#search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(165, 164, 164);
+  border-radius: 2px;
+  /*скругляем углы*/
+  box-shadow: inset
+    /*означает, что тень будет внутри*/
+    1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+  /*позволяет масшабировать на цменьшение при изменении размера страницы*/
+}
+
+#search-bar::placeholder {
+  /*изменения стиля плейсхолдера*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#search-button {
+  height: 40px;
+  width: 66px;
+  border: 1px solid rgb(165, 164, 164);
+  border-style: solid;
+  background-color: rgb(243, 242, 242);
+  margin-left: -1px;
+  border-radius: 2px;
+  position: relative;
+  /*для создания тултипа*/
+  display: flex;
+  /*этот и след параметры - для того, чтобы тултипы отображались по центру*/
+  justify-content: center;
+  align-items: center;
+}
+
+#search-button .tooltip {
+  /*target all tooltips inside search-button*/
+  position: absolute;
+  /*for tooltip creation*/
+  background-color: rgb(249, 207, 213);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  font-size: 13px;
+  bottom: -40px;
+  /*положение относительно низа кнопки*/
+  opacity: 0;
+  /*not visible until got hovered over*/
+  pointer-events: none;
+  /*not to show tooltip when hovering over it*/
+  /*whitespace: no wrap чтобы текст вытянулся в одну строку*/
+}
+
+#search-button:hover .tooltip {
+  /*to target tooltips only when hovering over the search button*/
+  opacity: 1;
+  transition: opacity 0.15s;
+  /*for tooltip to appear more smoothly*/
+}
+
+#search-icon {
+  height: 23px;
+  margin-top: 3px;
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 70px;
+  background-color: rgb(240, 210, 151);
+  width: 86px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#side-menu {
+  background-color: antiquewhite;
+  color: rgb(255, 0, 81);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: box-shadow 0.15s;
+}
+
+#side-menu:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+#button-first {
+  background-color: antiquewhite;
+  color: rgb(255, 0, 81);
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: box-shadow 0.15s;
+}
+
+#button-first:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1) perspective(1px)
+    /*увеличить кнопку при наведении на нее*/
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pre-main {
+  text-align: center;
+  padding-top: 10px;
+}
+
+p.main {
+  color: darkgoldenrod;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul.myul {
+  line-height: 25px;
+  /*расстояние между каждой линией в абзаце*/
+  display: inline-block;
+  color: darkgoldenrod;
+  font-size: 15px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+ul.navigation {
+  font-size: 15px;
+}
+
+.intro-common {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+@media (max-width: 800px) {
+
+  /*адаптация контента под размер экрана (чтобына маленьком экране отображалось не 3, а 2 колонки. этот блок для размера экрана 600пкс и меньше*/
+  .intro-common {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*#search-bar {
+  display: block;
+  как отображать: на всю строку или на часть
+  margin-left: 1290px;
+  font-size: 20px;
+  width: 140px;
+  height: 33px;
+} */
+
+
+a {
+  color: maroon;
+}
+
+a:hover {
+  color: indianred;
+}
+
+a:visited {
+  color: indigo;
+}
+
+table,
+th,
+td {
+  font-family: sans-serif;
+  font-size: 15px;
+  border: 2px solid maroon;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#subscribe {
+  background-color: rgb(142, 35, 71);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  /*see below*/
+  border-radius: 4px;
+  /*насколько округлить углы рамки*/
+  cursor: pointer;
+  /*сделали курсор в виде руки*/
+  margin-right: 10px;
+  /*отступ вправо*/
+  transition: opacity 0.15s;
+  /*насколько плавный переход между цветами*/
+}
+
+#subscribe:hover {
+  opacity: 0.75;
+}
+
+#subscribe:active {
+  /*какой будет дизайн при НАЖАТИИ кнопки*/
+  opacity: 0.5;
+}
+
+#contact {
+  background-color: rgb(185, 252, 254);
+  color: rgb(225, 12, 143);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.15s, color 0.15s;
+  padding-left: 14px;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  /*определфет размер свободного места внутри*/
+}
+
+#contact:hover {
+  background-color: rgb(225, 12, 143);
+  color: rgb(2185, 252, 254);
+}
+
+#contact:active {
+  opacity: 0.7;
+}
+
+#join {
+  background-color: white;
+  border-color: blueviolet;
+  border-style: solid;
+  /*рамка однотонная, без градиента*/
+  border-width: 1px;
+  padding-left: 14px;
+  padding-top: 9px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  color: rgb(132, 4, 63);
+  margin-left: 8px;
+  /*отступ влево*/
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  делает тень за кнопкой. первая цифра - горизонтальное положение тени вправо, вторая - вниз, третья - размытость*/
+}
+
+#join:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
