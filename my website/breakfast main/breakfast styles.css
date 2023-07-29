@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', Arial;
-    background-image: url('breakfast-background.jpg');
+    background-image: url(../common_images/common-background.jpg);
     margin: 0;
 }
 
