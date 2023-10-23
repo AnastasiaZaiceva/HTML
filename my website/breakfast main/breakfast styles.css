@@ -100,7 +100,7 @@ body {
     font-size: 50px;
     letter-spacing: 1px;
     padding-top: 90px;
-    padding-left: 230px;
+    padding-left: 140px;
     margin-bottom: 110px
 }
 
@@ -109,7 +109,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 45px;
     column-gap: 100px;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-right: 200px;
     align-items: center;
     text-align: center;
