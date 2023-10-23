@@ -94,3 +94,41 @@ body {
     margin-right: 2px;
 }
 
+.lunch-body h1 {
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(56, 56, 56);
+    font-size: 50px;
+    letter-spacing: 1px;
+    padding-top: 90px;
+    padding-left: 190px;
+    margin-bottom: 110px
+}
+
+.lunch-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 45px;
+    column-gap: 100px;
+    margin-left: 150px;
+    margin-right: 200px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.lunch-button {
+    text-align: center;
+}
+
+.lunch-button-itself {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: rgb(56, 56, 56);
+    border: none;
+    border-radius: 10px;
+    height: 125px;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
