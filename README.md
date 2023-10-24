@@ -8,10 +8,10 @@ There are 2 main things in this repo:
   - [x] **Homepage**
   - [x] **Contact Us**
   - [x] **Recepie pages**
-  * _For breakfast*_
-  * _For lunch_
-  * _Sauces_ (to be added in future)
-  * _Beverages_ (to be added in future)
+    * _For breakfast*_
+    * _For lunch_
+    * _Sauces_ (to be added in future)
+    * _Beverages_ (to be added in future)
  
  > **Important ❗**: As the website was made with HTML and CSS only, the Contact Us form along with the search bar cannot be used directly, they are only used to display the real items.
 
